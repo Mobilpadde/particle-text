@@ -81,7 +81,8 @@ const render = () => {
   })
 
   particles.forEach((p) => {
-    p.update({ radius: 0, density: 0, pos: new Vec(0, 0) })
+    if (meteors.length === 0)
+      p.update({ radius: 0, density: 0, pos: new Vec(0, 0) })
     p.draw(ctx)
   })
 
@@ -106,7 +107,10 @@ function connect() {
         ctx.lineTo(b.pos.x, b.pos.y)
 
         const alpha = 1 - d / 60
-        ctx.strokeStyle = `rgba(255, 255, 255, ${alpha})`
+        ctx.strokeStyle = `hsla(210, 100%, ${Math.min(
+          a.light,
+          b.light,
+        )}%, ${alpha})`
         ctx.lineWidth = 2
         ctx.stroke()
       }
