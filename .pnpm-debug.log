@@ -1,0 +1,35 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "Command failed with ENOENT: iu\nspawn iu ENOENT",
+      "code": "ENOENT",
+      "stack": "Error: Command failed with ENOENT: iu\nspawn iu ENOENT\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)\n    at onErrorNT (internal/child_process.js:467:16)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+    }
+  },
+  "2 error pnpm": {
+    "errno": -2,
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "syscall": "spawn iu",
+    "path": "iu",
+    "spawnargs": [],
+    "originalMessage": "spawn iu ENOENT",
+    "shortMessage": "Command failed with ENOENT: iu\nspawn iu ENOENT",
+    "command": "iu",
+    "escapedCommand": "iu",
+    "failed": true,
+    "timedOut": false,
+    "isCanceled": false,
+    "killed": false,
+    "prefix": "/home/avl/Work/generative/particle-text",
+    "err": {
+      "name": "Error",
+      "message": "Command failed with ENOENT: iu\nspawn iu ENOENT",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: Command failed with ENOENT: iu\nspawn iu ENOENT\n    at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)\n    at onErrorNT (internal/child_process.js:467:16)\n    at processTicksAndRejections (internal/process/task_queues.js:82:21)"
+    }
+  }
+}
